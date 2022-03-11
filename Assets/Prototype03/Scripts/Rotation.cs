@@ -20,4 +20,12 @@ public class Rotation : MonoBehaviour
         transform.Rotate((new Vector3(xSpeed, ySpeed, zSpeed)
     * Time.deltaTime));
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+        }
+
+    }
 }

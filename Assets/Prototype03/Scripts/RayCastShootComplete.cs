@@ -56,7 +56,7 @@ public class RayCastShootComplete : MonoBehaviour {
 				laserLine.SetPosition (1, hit.point);
 
 				// Get a reference to a health script attached to the collider we hit
-				ShootableBox health = hit.collider.GetComponent<ShootableBox>();
+				ShootedEnemies health = hit.collider.GetComponent<ShootedEnemies>();
 
 				// If there was a health script attached
 				if (health != null)

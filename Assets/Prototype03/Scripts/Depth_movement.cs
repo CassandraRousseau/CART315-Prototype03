@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platform_depth_movement : MonoBehaviour
+public class Depth_movement : MonoBehaviour
 {
     public GameObject Player;
     public float speed = 2.5f;
@@ -20,18 +20,11 @@ public class Platform_depth_movement : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Player)
+        if (other.CompareTag("Player"))
         {
-            Player.transform.parent = transform;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
         }
 
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == Player)
-        {
-            Player.transform.parent = null;
-        }
-
-    }
+   
 }
