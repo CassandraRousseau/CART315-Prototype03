@@ -15,13 +15,13 @@ public class Horizontal_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.PingPong(Time.time * speed, 3) + originalX, transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.PingPong(Time.time * speed, 15) + originalX, transform.position.y, transform.position.z);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
 
     }

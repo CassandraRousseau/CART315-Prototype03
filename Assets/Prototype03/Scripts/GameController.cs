@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
         if (monsters <= 0)
         {
             killedAll = true;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Win");
         }
         else {
             killedAll = false;

@@ -8,7 +8,7 @@ public class EnemiesCollision : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
 
     }

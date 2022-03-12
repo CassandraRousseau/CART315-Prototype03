@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Prototype03/Prototype03.unity
     guid: d967eb1fce7392f419ba31a825a5c4fb
   - enabled: 1
-    path: Assets/Prototype03/EndGame.unity
+    path: Assets/Prototype03/GameOver.unity
+    guid: a5b5dd2e1ddca814bb74fc9cb18ae38b
+  - enabled: 1
+    path: Assets/Prototype03/Win.unity
     guid: 2483603409afcbf438ac52bc11812665
   m_configObjects: {}

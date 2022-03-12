@@ -16,13 +16,13 @@ public class Depth_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.PingPong(Time.time * speed, 3) + originalZ);
+        transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.PingPong(Time.time * speed, 15) + originalZ);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
 
     }

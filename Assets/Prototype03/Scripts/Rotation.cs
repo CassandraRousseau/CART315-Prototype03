@@ -5,9 +5,6 @@ using UnityEngine;
 public class Rotation : MonoBehaviour
 {
 
-    public float xSpeed = 0.0f;
-    public float ySpeed = 0.0f;
-    public float zSpeed = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +14,13 @@ public class Rotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate((new Vector3(xSpeed, ySpeed, zSpeed)
-    * Time.deltaTime));
+        transform.Rotate(0,.3f,0);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndGame");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
 
     }

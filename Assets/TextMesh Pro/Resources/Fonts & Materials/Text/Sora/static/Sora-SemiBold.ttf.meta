@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 4ef12e1d8aeb6bb4c9240ec3eeb8a0a9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sora
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b94e1afce9b2fca4b93f1f744ed58c08, type: 3}
+  - {fileID: 12800000, guid: 4c329155c089e074bb3d71253799f713, type: 3}
+  - {fileID: 12800000, guid: 982f7a0b0e3da1048b697ad3b6ac3fb2, type: 3}
+  - {fileID: 12800000, guid: 125f74e2a5543364ea81e17913d0ec97, type: 3}
+  - {fileID: 12800000, guid: b3f46c408fd343a45aa88690dbc83d6b, type: 3}
+  - {fileID: 12800000, guid: 458790c458de4c24997f7ba9c095926c, type: 3}
+  - {fileID: 12800000, guid: 8da7ad78124aed94481da0e243b75cea, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
